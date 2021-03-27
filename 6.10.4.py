@@ -9,8 +9,8 @@ class Guest(Volunteer):
         super().__init__(name, city, status)
         self.hotel_nights = hotel_nights
 
-    def add_to_list(self, list):
-        return list.append(f'{self.name}, г.{self.city}, статус "{self.status}"')
+    def add_to_list(self, g_list):
+        return g_list.append(f'{self.name}, г.{self.city}, статус "{self.status}"')
 
     def display_guest(self):
         print(f'{self.name}, г.{self.city}, статус "{self.status}"')
